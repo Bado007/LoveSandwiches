@@ -49,11 +49,14 @@ def validate_data(values):
         print(f"Invalid data: {e}, please try again.\n") 
         return False  
 
-    return True     
+    return True  
 
+
+#From this code below:   
+"""
 def update_sales_worksheet(data):
     """
-    Update sales worksheet, add new row with the list data provided.
+    #Update sales worksheet, add new row with the list data provided.
     """
     print("Updating sales worksheet...\n")
     sales_worksheet = SHEET.worksheet("sales")
@@ -62,13 +65,14 @@ def update_sales_worksheet(data):
 
 def update_surplus_worksheet(data):
     """
-    Update surplus worksheet, add new row with the list data provided.
+    #Update surplus worksheet, add new row with the list data provided.
     """
     print("Updating surplus worksheet...\n")
     surplus_worksheet = SHEET.worksheet("surplus")
     surplus_worksheet.append_row(data)
     print("Surplus worksheet updated successfully.\n")
-
+"""
+#We created the function for both
 
 def calculate_surplus_data(sales_row):
     """
